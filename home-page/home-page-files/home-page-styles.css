@@ -1,0 +1,31 @@
+/* font they use: DinPro-Medium */
+
+section { /* the products within the banner */
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p {
+    font-family: Helvetica, sans-serif;
+}
+
+.products ul {
+    display: flex;
+    flex-direction: column
+}
+
+.cost-and-bell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cost-and-bell p {
+    color: red;
+}
