@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* for the right side of the header */
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    font-family: Helvetica;
+    margin: 1rem;
+    color: black;
+}
+
+li a:hover {
+    color: red;
+}
+
+#Pop-Mart-Logo {
+    height: 1.5em;
+    width: 6rem;
+}
+
+/* for the left side of the header */
+.svgs {
+    width: 1rem;
+    height: 1rem;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+}
