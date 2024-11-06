@@ -28,11 +28,30 @@ li a:hover {
 
 /* for the left side of the header */
 .svgs {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem;
 }
 
 div {
     display: flex;
     flex-direction: row;
+}
+
+p {
+    font-family: Helvetica;
+}
+
+input {
+    /*Magnify glass in the input box) */
+    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+
+
+    border-radius: 4rem;
+    width: 23%;
+    height: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
 }
