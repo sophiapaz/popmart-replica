@@ -5,12 +5,6 @@ section { /* the products within the banner */
     justify-content: center;
 }
 
-ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
 p {
     font-family: Helvetica, sans-serif;
 }
@@ -20,12 +14,58 @@ p {
     flex-direction: column
 }
 
+/* price for the bell and and price on the items */
 .cost-and-bell {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline; /*ask about aligning image */
+}
+
+.cost-and-bell p {
+    color: red;
+}
+
+.bell {
+    width: 2rem;
+    height: 2rem;
+}
+
+/*images of the products*/
+.product-image {
+    width: 20rem;
+    height: 20rem;
+}
+
+/*Arrow buttons for the products to look for more*/
+button{ 
+    align-items: baseline; /*ask in class */
+    width: 5rem;
+    height: 5rem;
+    background-color: white;
+    border: none;
+    padding: 5rem;
+}
+
+button:hover {
+    border: 3rem;
+    border-color: black;
+    color: #bbb;
+    cursor: pointer;
+}
+
+/* new arrivals and more link*/
+ul {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.cost-and-bell p {
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
     color: red;
+}
+
+main ul a {
+    color: black;
 }
