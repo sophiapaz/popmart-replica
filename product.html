@@ -17,22 +17,27 @@
     <nav>
         <ul>
             <li>HOME</li>
+            <li class="separator">/</li>
             <li>Designer Figurines</li>
+            <li class="separator">/</li>
             <li>Peach Riot</li>
-            <li>Peach Riot Witchy Punk Figures</li>
+            <li class="separator">/</li>
+            <li id="highlight">Peach Riot Witchy Punk Figures</li>
         </ul>
     </nav>
 
     <main>
         <section class="imageCarousel">
-            <section>
-                <img src="" alt="main picture">
-                <img src="" alt="individual figurine picture">
-                <img src="" alt="individual figurine picture">
-                <img src="" alt="individual figurine picture">
-                <img src="" alt="promotional picture">
+            <section class="imagePreview">
+                <img src="assets/product-page/pic1.jpg" alt="main picture">
+                <img src="assets/product-page/pic2.jpg" alt="individual figurine picture">
+                <img src="assets/product-page/pic3.jpg" alt="individual figurine picture">
+                <img src="assets/product-page/pic4.jpg" alt="individual figurine picture">
+                <img src="assets/product-page/pic5.jpg" alt="promotional picture">
             </section>
-            <div class="productCloseUp"></div>
+            <div class="productCloseUp">
+                
+            </div>
         </section>
 
         <section>
@@ -43,19 +48,19 @@
                 <p>QUANTITY</p>
 
                 <div class="addFeature">
-                    <button>minus</button>
-                    <div class="counter"></div>
-                    <button>plus</button>
+                    <span class="minus">-</span>
+                    <input type="text" value="0">
+                    <span class="plus">+</span>
                 </div>
 
-                <p>Max 1 set per person</p>
+                <p id="max">Max 1 set per person</p>
 
-                <div>
-                    <button>
-                        <img src="" alt="heart">
+                <div class="buttons">
+                    <button id="favorite-button">
+                        <img src="assets/product-page/heart.png" alt="heart">
                         <p>FAVORITE</p>
                     </button>
-                    <button>ADD TO BAG</button>
+                    <button id="add-to-bag">ADD TO BAG</button>
                 </div>
             </section>
 
