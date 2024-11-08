@@ -13,6 +13,7 @@ ul {
 li a {
     text-decoration: none;
     font-family: Helvetica;
+    font-weight: bold;
     margin: 1rem;
     color: black;
 }
@@ -38,19 +39,21 @@ div {
     flex-direction: row;
 }
 
-p {
-    font-family: Helvetica;
+#log-in-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
 }
 
 input {
     /*Magnify glass in the input box) */
-    background-image: url(https://cdn2.hubspot.net/hubfs/4004166/bioticresearch_website_assets/images/search_icon.png);
+    background-image: url(assets/header/search.png);
     background-repeat: no-repeat;
-    background-position: right center;
+    background-position: right;
 
 
     border-radius: 4rem;
-    border-color: #aaa;
+    border: 0;
+    background-color: #F4F4F4;
     width: 23%;
     height: 15%;
     padding: 12px 20px;
