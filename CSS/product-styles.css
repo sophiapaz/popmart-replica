@@ -4,6 +4,12 @@ body {
     margin: 0;
 }
 
+main {
+    display: flex;
+    justify-content: space-around;
+
+}
+
 .heading {
     background-color: #F4F4F4;
     text-align: center;
@@ -21,12 +27,125 @@ body {
 
 nav ul {
     display: flex;
+    align-items: center;
 }
 
-nav ul li {
+nav li {
     margin: 1vw;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.separator {
+    color: gray;
+    font-weight: bold;
+    font-size: 35px;
 }
 
 ul {
     list-style-type: none;
+}
+
+#separator {
+    color: red;
+}
+
+
+/* image preview */
+.imageCarousel {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.imagePreview {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+
+}
+
+.imagePreview img {
+    width: 100%;
+    margin: 5px;
+}
+
+/* minus and plus */
+.minus , .plus {
+    border: solid gray;
+    color: gray;
+    padding: 3px 10px 3px 10px;
+}
+
+#max {
+    color: gray;
+    margin: 5px;
+}
+
+
+
+/* buttons */
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+#favorite-button {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+    width: 20%;
+}
+
+#favorite-button img {
+    width: 20%;
+}
+
+#add-to-bag {
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+/* details dropdown */
+.detailsDropdown {
+    border-top: solid gray;
+    border-bottom: solid gray;
+
+}
+
+.detailsDropdown li {
+    padding-bottom: 1rem;
+}
+
+
+.ddropdownLinks {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+
+.detailsDropdown a {
+    color: black;
+}
+
+.detailsDropdown a:visited {
+    color: black;
+}
+
+#readMore {
+    padding-bottom: 2rem;
+}
+
+
+.page-container {
+    transform: scale(0.80); 
+    transform-origin: top left; 
+
+    max-width: 100vw;
 }
