@@ -13,6 +13,7 @@ ul {
 li a {
     text-decoration: none;
     font-family: Helvetica;
+    font-weight: bold;
     margin: 1rem;
     color: black;
 }
@@ -28,11 +29,33 @@ li a:hover {
 
 /* for the left side of the header */
 .svgs {
-    width: 1rem;
-    height: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem
 }
 
 div {
     display: flex;
     flex-direction: row;
+}
+
+#log-in-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+input {
+    /*Magnify glass in the input box) */
+    background-image: url(assets/header/search.png);
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+    border-radius: 4rem;
+    border: 0;
+    background-color: #F4F4F4;
+    width: 23%;
+    height: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
 }

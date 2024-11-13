@@ -4,67 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/home-page-styles.css">
+    <link rel="stylesheet" href="CSS/header-styles.css">
     <title>Home page</title>
 </head>
 <body>
-    <main> 
+    <header> 
+        <!--These are links to different parts of the website-->
         <ul>
+            <a href="header.html"><img id = "Pop-Mart-Logo" src="assets/header/logo.png" alt="Pop-Mart-Logo"></a>
+            <li><a href="#">CATEGORIES</a></li>
+            <li><a href="#">CHARACTERS</a></li>
+            <li><a href="#">ACCESSORIES</a></li>
+            <li><a href="#">MEGA</a></li>
+        </ul>
+
+        <!-- This includes most of the svgs and images-->
+        <ul>
+            <input type="text">
+            <div>
+                <a href="#"><img class = "svgs" src="assets/header/person.png" alt="svg"></a>
+                <p id="log-in-text">Sign in / Register</p>
+            </div>
+            <a href="#"><img class = "svgs" src="assets/header/headphone.png" alt="svg"></a>
+            <a href="#"><img class = "svgs" src="assets/header/heart.png" alt="svg"></a>
+            <a href="cart.html"><img class = "svgs" src="assets/header/shopping-bag.png" alt="svg"></a>
+        </ul>
+
+</header>
+
+
+
+
+
+    <main> 
+        <ul id="heading-home">
             <h1>New Arrivals</h1>
             <a href="#">MORE</a>
         </ul>
 
         <!-- Where the banner of products will go-->
         <section>
-            <button type = "arrow">Arrow</button>
+            <a href="#"><img class = "arrow-button" src="assets/home/left-arrow.png" alt="left-arrow"></a>
             <div class = "products">
                     <ul>
-                        <a href="hannah page"><img src="PUT SOMETHING" alt="Pop-Mart-Logo"></a>
+                        <a href="product.html"><img class = "product-image" src="assets/home/peach-riot-figures.jpg" alt="peach-riot-figures"></a>
                         <p class = "release-date"> OCT 24 19:00 </p> <!-- maybe do time?-->
                         <p> Peach Riot Witchy Punk Figures </p>
                         <div class = "cost-and-bell">
                             <p> $82.99 </p>
-                            <img src="home-page-assets/bell.png" alt="bell">
+                            <img class = "bell" src="assets/home/bell.png" alt="bell">
                         </div>
                     </ul>
             </div>
 
             <div class = "products">
                 <ul>
-                    <a href="hannah page"><img src="PUT SOMETHING" alt="Pop-Mart-Logo"></a>
+                    <a href="product.html"><img class = "product-image" src="assets/home/flower-bag.jpg" alt="flower-bag"></a>
                     <p> OCT 24 19:00 </p> <!-- maybe do time?-->
                     <p> THE MONSTER Classic Series Plush Flower Bag </p>
                     <div class = "cost-and-bell">
                         <p> $39.99 </p>
-                        <img src="home-page-assets/bell.png" alt="bell">
+                        <img class = "bell" src="assets/home/bell.png" alt="bell">
                     </div>
                 </ul>
             </div>
 
             <div class = "products">
                 <ul>
-                    <a href="hannah page"><img src="PUT SOMETHING" alt="Pop-Mart-Logo"></a>
+                    <a href="product.html"><img class = "product-image" src="assets/home/kda-figure.jpg" alt="kda-figure"></a>
                     <p> OCT 24 19:00</p> <!-- maybe do time?-->
                     <p> League of Legends K/DA ALL OUT Series figures </p>
                     <div class = "cost-and-bell">
                         <p> $21.99 </p>
-                        <img src="home-page-assets/bell.png" alt="bell">
+                        <img class = "bell" src="assets/home/bell.png" alt="bell">
                     </div>
                 </ul>
             </div>
 
             <div class = "products">
                 <ul>
-                    <a href="hannah page"><img src="PUT SOMETHING" alt="Pop-Mart-Logo"></a>
+                    <a href="product.html"><img class = "product-image" src="assets/home/molly-figure.jpg" alt="molly-figure"></a>
                     <p> OCT 24 19:00</p> <!-- maybe do time?-->
                     <p> Molly Bear Bread 1/8 Action Figure </p>
                     <div class = "cost-and-bell">
                         <p> $69.99 </p>
-                        <img src="home-page-assets/bell.png" alt="bell">
+                        <img class = "bell" src="assets/home/bell.png" alt="bell">
                     </div>
                 </ul>
             </div>
 
-            <button type = "arrow">Arrow</button>
+            <a href="#"><img class = "arrow-button" src="assets/home/right-arrow.png" alt="right-arrow"></a>
         </section>
     </main>
 </body>
