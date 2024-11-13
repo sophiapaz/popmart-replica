@@ -1,0 +1,22 @@
+.top {
+    display: flex;
+}
+
+.productPreview {
+    display: flex;
+    flex-direction: column;
+}
+
+.productInfo {
+    display: flex;
+    flex-direction: row;
+}
+
+.productInfo img {
+    width: 40%;
+}
+
+.labelInfo {
+    display: flex;
+    flex-direction: row;
+}
