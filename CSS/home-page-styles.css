@@ -3,6 +3,10 @@
 #heading-home {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    gap: 65rem;
+
+    margin-bottom: 0;
 }
 
 section { /* the products within the banner */
