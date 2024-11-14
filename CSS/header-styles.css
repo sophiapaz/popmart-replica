@@ -1,6 +1,7 @@
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* for the right side of the header */
@@ -23,8 +24,9 @@ li a:hover {
 }
 
 #Pop-Mart-Logo {
-    height: 1.5em;
+    height: 2rem;
     width: 6rem;
+    margin-right: 1rem;
 }
 
 /* for the left side of the header */
@@ -37,6 +39,7 @@ li a:hover {
 div {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 #log-in-text {
@@ -44,9 +47,15 @@ div {
     font-weight: lighter;
 }
 
+#cart-counter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+}
+
 input {
     /*Magnify glass in the input box) */
-    background-image: url(assets/header/search.png);
+    background-image: url(assets/header/search.png); /*ask about this */
     background-repeat: no-repeat;
     background-position: right;
 

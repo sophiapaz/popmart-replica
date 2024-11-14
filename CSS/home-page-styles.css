@@ -1,9 +1,5 @@
 /* font they use: DinPro-Medium */
 
-main {
-    
-}
-
 #heading-home {
     display: flex;
     align-items: center;
@@ -16,7 +12,8 @@ section { /* the products within the banner */
 
 p {
     font-family: Helvetica, sans-serif;
-    font-weight: bold;
+    font-weight: lighter;
+    max-width: 35ch;
 }
 
 .products ul {
@@ -47,17 +44,25 @@ p {
     height: 20rem;
 }
 
+.product-image:hover {
+    transform:scale(1.1);
+}
+
 /*Arrow buttons for the products to look for more*/
 .arrow-button{ 
     width: 2rem;
     height: 2rem;
-
-    display: flex;
-    align-items: center;
 }
 
 .arrow-button:hover {
     cursor: pointer;
+}
+
+button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    border: none;
 }
 
 /* new arrivals and more link*/
