@@ -79,10 +79,10 @@ footer {
     align-items: center;
 }
 
-a:link {
+.link:link {
     color: gray;
 }
-a:visited {
+.link:visited {
     color: gray;
 }
 

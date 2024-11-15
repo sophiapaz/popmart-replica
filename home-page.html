@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/home-page-styles.css">
     <link rel="stylesheet" href="CSS/header-styles.css">
+    <link rel="stylesheet" href="CSS/footer.css">
     <script src="home-page-script.js"></script>
     <title>Home page</title>
 </head>
 <body>
     <header> 
         <!--These are links to different parts of the website-->
-        <ul>
+        <ul class = "header-ul">
             <a href="header.html"><img id = "Pop-Mart-Logo" src="assets/header/logo.png" alt="Pop-Mart-Logo"></a>
             <li><a href = "#">NEW & FEATURED</a>
             <li><a href="#">CATEGORIES</a></li>
@@ -21,15 +22,15 @@
         </ul>
 
         <!-- This includes most of the svgs and images-->
-        <ul>
-            <input type="text">
-            <div>
+        <ul class = "header-ul">
+            <input id = "search" type ="text">
+            <div class = "header-div">
                 <a href="#"><img class = "svgs" src="assets/header/person.png" alt="svg"></a>
                 <p id="log-in-text">Sign in / Register</p>
             </div>
             <a href="#"><img class = "svgs" src="assets/header/headphone.png" alt="svg"></a>
             <a href="#"><img class = "svgs" src="assets/header/heart.png" alt="svg"></a>
-            <div>
+            <div class = "header-div">
                 <a href="cart.html"><img class = "svgs" src="assets/header/shopping-bag.png" alt="svg"></a>
                 <p id = "cart-counter"> 0 </p>
             </div>
@@ -40,7 +41,7 @@
 <!-- This is the main content of the home page -->
     <main> 
         <ul id="heading-home">
-            <h1>New Arrivals</h1>
+            <h1 id = "title">New Arrivals</h1>
             <a href="#">MORE</a>
         </ul>
 
@@ -48,7 +49,7 @@
         <section>
             <button><img class = "arrow-button" src="assets/home/left-arrow.png" alt="left-arrow"></button>
             <div class = "products">
-                    <ul>
+                    <ul class = "products-ul">
                         <a href="product.html"><img class = "product-image" src="assets/home/peach-riot-figures.jpg" alt="peach-riot-figures"></a>
                         <p class = "release-date"> OCT 24 19:00 </p> <!-- maybe do time?-->
                         <p> Peach Riot Witchy Punk Figures </p>
@@ -60,7 +61,7 @@
             </div>
 
             <div class = "products">
-                <ul>
+                <ul class = "products-ul">
                     <a href="product.html"><img class = "product-image" src="assets/home/flower-bag.jpg" alt="flower-bag"></a>
                     <p> OCT 24 19:00 </p> <!-- maybe do time?-->
                     <p> THE MONSTER Classic Series Plush Flower Bag </p>
@@ -72,7 +73,7 @@
             </div>
 
             <div class = "products">
-                <ul>
+                <ul class = "products-ul">
                     <a href="product.html"><img class = "product-image" src="assets/home/kda-figure.jpg" alt="kda-figure"></a>
                     <p> OCT 24 19:00</p> <!-- maybe do time?-->
                     <p> League of Legends K/DA ALL OUT Series figures </p>
@@ -84,7 +85,7 @@
             </div>
 
             <div class = "products">
-                <ul>
+                <ul class = "products-ul">
                     <a href="product.html"><img class = "product-image" src="assets/home/molly-figure.jpg" alt="molly-figure"></a>
                     <p> OCT 24 19:00</p> <!-- maybe do time?-->
                     <p> Molly Bear Bread 1/8 Action Figure </p>
@@ -99,5 +100,95 @@
         </section>
     </main>
 
+    <!-- html for the footer-->
+    <footer>
+        <section class="promotions">
+            <div class="social-media">
+                <h1>FOLLOW US ON</h1>
+                <div class="social-media-pics">
+                    <img src="assets/footer/instagramLogo.webp" alt="instagram logo">
+                    <img src="assets/footer/facebookLogo.png" alt="facebook logo">
+                    <img src="assets/footer/tiktokLogo.png" alt="tiktok logo">
+                </div>
+            </div>
+            <div class="download">
+                <img src="assets/footer/googlePlay.png" alt="download on google play">
+                <img src="assets/footer/appStore.png" alt="download on app store">
+            </div>
+        </section>
+        <section class="main">
+            <div class="community">
+                <h2>JOIN THE COMMUNITY</h2>
+                <p>Be the first one to recieve our new releases, special offers and more.</p>
+                
+                <div>
+                    <input type="email" placeholder="Your email address">
+                    <a class="link" href="">Sign Me Up</a>
+                </div>
+
+                <h2>CONTACT US</h2>
+                <div class="comm">
+                    <div class="chat-left">
+                        <h3>Chat</h3>
+                        <p>Monday - Sunday 9:00 am-2:00 am PDT</p>
+                    </div>
+                    <div class="comm-right">
+                        <a class="link" href="">Chat with us</a>
+                    </div>
+                </div>
+                <div class="comm">
+                    <div class="comm-left">
+                        <h3>Email</h3>
+                        <p>na.support@popmart.com</p>
+                    </div>
+                    <div class="comm-right">
+                        <a class="link" href="">Email us</a>
+                    </div>
+                </div>
+
+                <a href="" class="link">Visit Help Center (FAQs)</a>
+
+                <div class="change-region">
+                    <p>CHANGE COUNTRY/REGION</p>
+                    <img src="assets/footer/americanFlag.png" alt="american flag">
+                    <p>US</p>
+                </div>
+            </div>
+            <div class="support">
+                <ul>
+                    <li class="list-title">SUPPORT</li>
+                    <li>FIND A STORE</li>
+                    <li>TRACK YOUR ORDER</li>
+                    <li>ORDER STATUS</li>
+                    <li>TERMS & CONDITIONS</li>
+                    <li>PRIVACY POLICY</li>
+                    <li>SHIPPING INFO</li>
+                    <li>RETURNS</li>
+                    <li>FAQ</li>
+                </ul>
+                <ul>
+                    <li class="list-title">ABOUT US</li>
+                    <li>NEWS</li>
+                    <li>ARTISTS</li>
+                    <li>ABOUT POPMART</li>
+                    <li>INVESTOR RELATIONS</li>
+                    <li>CONTACT US</li>
+                    <li>CAREERS</li>
+                </ul>
+                <ul>
+                    <li class="list-title">SHOP</li>
+                    <li>LAUNCH CALENDAR</li>
+                    <li>TRENDING</li>
+                    <li>BLIND BOXES</li>
+                    <li>MEGA COLLECTIONS</li>
+                    <li>ACCESSORIES</li>
+                </ul>
+            </div>
+        </section>
+        <section class="payment">
+            <p>© 2024 POP MART ALL RIGHTS RESERVED</p>
+            <img src="assets/footer/payment.png" alt="payments">
+        </section>
+    </footer>
 </body>
 </html>
