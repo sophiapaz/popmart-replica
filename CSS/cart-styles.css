@@ -1,55 +1,120 @@
-.top {
-    display: flex;
-}
 
-.productPreview {
+body {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    flex-direction: column;
-}
-
-.productInfo {
-    display: flex;
-    flex-direction: row;
-}
-
-.productInfo img {
-    width: 40%;
-}
-
-.labelInfo {
-    display: flex;
-    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    min-height: 100vh;
+    margin: 0;
 }
 
 main {
     display: flex;
-    justify-content: center;
+    margin-top: 2rem;
 }
 
-/* right side of the cart page*/
-.right {
-    background-color: #F5F5F5;
+.left {
+    width: 70%;
+    padding-right: 1rem;
+    border-right: 1px solid #ddd;
 }
 
-span {
+/* Top navigation in left section */
+.top {
     display: flex;
     justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.productPreview {
+    padding: 10px 0;
+}
+
+.productInfo {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+}
+
+.productInfo img {
+    width: 20%;
+    margin-right: 20px;
+}
+
+.labelInfo {
+    display: flex;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.addFeature {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+/* Minus and Plus buttons */
+.minus, .plus {
+    border: 1px solid gray;
+    color: gray;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.adjust {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.adjust input[type="text"] {
+    width: 30px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+
+.adjust a {
+    margin-top: 10px;
+    color: red;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.remove {
+    color: black;
+}
+
+/* Right */
+.right {
+    width: 30%;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.right span {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
 }
 
 .cost {
     font-weight: bold;
 }
 
-p {
-    font-family: Arial, Helvetica, sans-serif ;
-}
-
 button {
+    width: 100%;
     background-color: red;
     border: none;
-    padding: 0.5rem;
-
+    padding: 10px;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
 }
