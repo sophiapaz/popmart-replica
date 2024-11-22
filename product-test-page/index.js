@@ -9,6 +9,8 @@ addToBagButton.addEventListener("click",()=>{
     counterDisplayElem.textContent = count; //displaying the number
 });
 
+// fetch js function to keep the cart number (store number on the server)
+
 // picture hover feature
 const thumbnails = document.querySelectorAll(".thumbnail");
 const bigPicture = document.getElementById("bigPicture");
