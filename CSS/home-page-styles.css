@@ -12,6 +12,7 @@
 section { /* the products within the banner */
     display: flex;
     justify-content: center;
+    
 }
 
 .products p {
@@ -22,7 +23,7 @@ section { /* the products within the banner */
 
 .products ul {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 /* price for the bell and and price on the items */
@@ -30,7 +31,7 @@ section { /* the products within the banner */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: baseline; /*ask about aligning image */
+    align-items: center;
 }
 
 .cost-and-bell p {
@@ -53,12 +54,25 @@ section { /* the products within the banner */
 }
 
 /*Arrow buttons for the products to look for more*/
-.arrow-button{ 
+.pre-button{ 
     width: 2rem;
     height: 2rem;
+
+    left: 0;
 }
 
-.arrow-button:hover {
+.next-button{ 
+    width: 2rem;
+    height: 2rem;
+
+    right: 0;
+}
+
+.pre-button:hover {
+    cursor: pointer;
+}
+
+.next-button:hover {
     cursor: pointer;
 }
 
@@ -84,4 +98,15 @@ button {
 
 main ul a {
     color: black;
+}
+
+
+/* mainly for the javascript*/
+#product-team-two {
+    display: none;
+}
+
+#product-team-one{
+    display: flex;
+    flex-direction: row;
 }
