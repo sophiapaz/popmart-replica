@@ -23,7 +23,7 @@ section { /* the products within the banner */
 
 .products ul {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 /* price for the bell and and price on the items */
@@ -98,4 +98,15 @@ button {
 
 main ul a {
     color: black;
+}
+
+
+/* mainly for the javascript*/
+#product-team-two {
+    display: none;
+}
+
+#product-team-one{
+    display: flex;
+    flex-direction: row;
 }
