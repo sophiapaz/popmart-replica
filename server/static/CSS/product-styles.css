@@ -217,3 +217,12 @@ ul {
     cursor: pointer;
     border: 2px solid transparent;
 }
+
+.new {
+    background-color: #ffb300;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font: 20px;
+}

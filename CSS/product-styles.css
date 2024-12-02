@@ -217,3 +217,7 @@ ul {
     cursor: pointer;
     border: 2px solid transparent;
 }
+
+.new {
+    background-color: #ffb300;
+}
