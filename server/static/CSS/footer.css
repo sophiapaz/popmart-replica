@@ -117,14 +117,10 @@ footer {
     list-style: none;
 }
 
-.support li {
+.support li{
     margin-bottom: 1rem; 
+    
     font-size: 12px;
-    list-style: none;
-}
-
-footer li {
-    list-style: none;
 }
 
 
