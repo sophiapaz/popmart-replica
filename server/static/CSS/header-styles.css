@@ -1,0 +1,70 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* for the right side of the header */
+.header-ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li a {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    margin: 1rem;
+    color: black;
+}
+
+li a:hover {
+    color: red;
+}
+
+#Pop-Mart-Logo {
+    height: 2rem;
+    width: 6rem;
+    margin-right: 1rem;
+}
+
+/* for the left side of the header */
+.svgs {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1rem
+}
+
+.header-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#log-in-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+#cart-counter {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+
+}
+
+#search {
+    /*Magnify glass in the input box) */
+    background-image: url(assets/header/search.png); /*ask about this */
+    background-repeat: no-repeat;
+    background-position: right;
+
+
+    border-radius: 4rem;
+    border: 0;
+    background-color: #F4F4F4;
+    width: 23%;
+    height: 15%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}

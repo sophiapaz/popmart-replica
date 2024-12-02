@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cart page</title>
-
-    <link rel="stylesheet" href="CSS/cart-styles.css">
+    <title>Product</title>
+    <link rel="stylesheet" href="CSS/product-styles.css">
     <link rel="stylesheet" href="CSS/header-styles.css">
     <link rel="stylesheet" href="CSS/footer.css">
-
+    <script defer src="product-script.js"></script>
 </head>
-<body>
-    <!-- heading -->
 
+<body>
     <header> 
         <!--These are links to different parts of the website-->
         <ul class ="header-ul">
@@ -35,65 +33,104 @@
             <a href="#"><img class = "svgs" src="assets/header/heart.png" alt="svg"></a>
             <div class = "header-div">
                 <a href="cart.html"><img class = "svgs" src="assets/header/shopping-bag.png" alt="svg"></a>
-                <p id = "cart-counter"> 0 </p>
+                <p id = "cart-counter">0</p>
             </div>
         </ul>
 </header>
 
-    <main>
-        <section class="left">
-            <div class="top">
-                <p>Pop Upon Delivery</p>
-                <p>POP NOW</p>
-            </div>
+    <!-- heading -->
+    <section class="heading">
+        <p>UNLOCK INSTANT SURPRISES WITH POP NOW - PICK, SHAKE, AND UNBOX!</p>
+        <a href="">POP NOW!</a>
+    </section>
 
-            <div class="productPreview">
-                <div>
-                    <input type="checkbox" id="selectAll">
-                    <label for="selectAll">Select all</label>
-                </div>
-                <div class="productInfo">
-                    <input type="checkbox" id="product">
-                    <label for="product" class="labelInfo">
-                        <img src="assets/cart-page/pic1.jpg" alt="product image" href="product.html">
-                        <div>
-                            <h4>Peach Riot Witchy Punk Figures</h4>
-                            <p>QUANTITY</p>
-                            <p>$82.99</p>
-    
-                            <div class="adjust">
-                                <div class="addFeature">
-                                    <span class="minus">-</span>
-                                    <input type="text" value="1">
-                                    <span class="plus">+</span>
-                                </div>
-                                <a href="remove">REMOVE</a>
-                            </div>
-                        </div>
-                    </label>
-                </div>
+    <nav>
+        <ul>
+            <li>HOME</li>
+            <li class="separator">/</li>
+            <li>Designer Figurines</li>
+            <li class="separator">/</li>
+            <li>Peach Riot</li>
+            <li class="separator">/</li>
+            <li id="highlight">Peach Riot Witchy Punk Figures</li>
+        </ul>
+    </nav>
+
+    <section class="page-container">
+    <main>
+        <section class="imageCarousel">
+            <section class="imagePreview">
+                <img src="assets/product-page/pic1.jpg" alt="main picture" class="thumbnail">
+                <img src="assets/product-page/pic2.jpg" alt="individual figurine picture" class="thumbnail">
+                <img src="assets/product-page/pic3.jpg" alt="individual figurine picture" class="thumbnail">
+                <img src="assets/product-page/pic4.jpg" alt="individual figurine picture" class="thumbnail">
+                <img src="assets/product-page/pic5.jpg" alt="promotional picture" class="thumbnail">
+            </section>
+            <div class="productCloseUp">
+                <img src="assets/product-page/pic1.jpg" alt="Big picture" id="bigPicture">
             </div>
         </section>
 
-        <section class="right">
-            <span>
-                <p>Subtotal</p>
-                <p class = "cost">$0.00 USD</p>
-            </span>
-            <span>
-                <p>Shipping</p>
-                <p>Calculated at next step</p>
-            </span>
-            <span>
-                <p>Total(0)</p>
-                <p class = "cost">$0.00 USD</p>
-            </span>
+        <section>
+            <section>
+                <button class="new">NEW</button>
+                <h3>Peach Riot Witchy Punk Figures</h3>
+                <p>$82.99</p>
+                <p>QUANTITY</p>
 
-            <button>CHECK OUT</button>
+                <div class="addFeature">
+                    <span class="minus">-</span>
+                    <input type="text" value="1">
+                    <span class="plus">+</span>
+                </div>
+
+                <p id="max">Max 1 set per person</p>
+
+                <div class="buttons">
+                    <button id="favorite-button">
+                        <img src="assets/product-page/heart.png" alt="heart">
+                        <p>FAVORITE</p>
+                    </button>
+                    <button id="add-to-bag">ADD TO BAG</button>
+                </div>
+            </section>
+
+
+            <p id="toggleButtonD">DETAILS</p>
+            <section class="detailsDropdownDetails">
+                <ul>
+                    <li>Brand: POP MART</li>
+                    <li>Release Date: October 22</li>
+                    <li>SIZE: 13CM/5.12INCHES</li>
+                    <li>MATERIAL: PVC/ABS</li>
+                    <li>Age: 15+</li>
+                    <li>*Due to differences in measurement methods, the actual me...</li>
+                </ul>
+
+                <div class="ddropdownLinks">
+                    <a href="">View Product Details</a>
+                    <a href="">What's a blind box</a>
+                </div>
+            </section>
+            
+            <p class="toggleButton">SHIPPING & AFTER-SALES SERVICE</p>
+            <section class="detailsDropdown">
+                <ul>
+                    <li>1. After you add the figurine to the shopping cart, our system will automatically calculate the shipping cost based on the weight of the product you purchased.</li>
+                    <li>2. Confirmed orders usually will be processed to ship out within 72 hours. If your order includes a pre-sale figurine, the entire order will be shipped after the pre-sale products are in stock.</li>
+                    <li>3. Products may be sent from the United States or China, our system will automatically select the delivery warehouse based on where the product is in stock.</li>
+                    <li>--Local Shipments: approximately 3-7 business days</li>
+                    <li>--International Shipments: approximately 7-15 business days</li>
+                    <li>4. For international express shipments, the buyer shall bear any Customs Duty costs.</li>
+                </ul>
+                
+                <a href="" class="readMore">Read More</a>
+            </section>
         </section>
     </main>
-    <!-- footer -->
+</section>
 
+    <!-- footer -->
     <footer>
         <section class="promotions">
             <div class="social-media">
